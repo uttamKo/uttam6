@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Anynomous Function and Arrow Function</title>
+</head>
+
+<body>
+    <div>
+        <h1>Anynomous Function and Arrow Function</h1>
+        <!-- this is also anynomous function also called arrow function used in callbacks -->
+        <button onclick="sum(10, 20, (a, b)=>{
+            alert(a+b);
+        });">Click Me</button>
+    </div>
+
+    <script>
+        function sum(a, b, callback){
+            callback(a, b);
+        }
+
+        //this is anynomous function called when page loads
+        sum(10, 20, function(a, b){
+            alert(a+b);
+        });
+    </script>
+</body>
+</html>
